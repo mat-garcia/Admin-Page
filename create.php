@@ -19,7 +19,7 @@ if(!empty($_POST)){
             
         );
         if($stmt->execute($dados)){
-         header('location: home.php');
+         header('location: index.php');
         }
     }
     catch (PDOException $e){ 
@@ -90,7 +90,7 @@ if(!empty($_POST)){
                 <div class="row">
                 <button class="btn waves-effect waves-light" type="submit">Adicionar
                 <i class="material-icons right">add</i></button>
-                <a href="./home.php.php" class="btn waves-effect waves-light red">Voltar</a>
+                <a href="./index.php" class="btn waves-effect waves-light red">Voltar</a>
                 </div>
 
                 </form>

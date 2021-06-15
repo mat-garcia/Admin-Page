@@ -32,7 +32,7 @@ if(!empty($_POST)){
             ':complemento' => $_POST['complemento'],
         );
         if($stmt->execute($dados)){
-            header("location: index.php") ;
+            header("location: home.php") ;
         }
     }
     catch (PDOException $e){ 
@@ -104,7 +104,7 @@ if(!empty($_POST)){
                 <button class="btn blue waves-effect waves-light" type="submit">Editar
                 <i class="material-icons right">edit</i>
                 </button>
-                <a href="./index.php" class="btn waves-effect waves-light red">Voltar</a>
+                <a href="./home.php" class="btn waves-effect waves-light red">Voltar</a>
                 </div>
 
                 </form>

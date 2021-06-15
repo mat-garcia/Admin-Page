@@ -63,3 +63,10 @@ $clientes = $stmt->fetchAll(PDO::FETCH_OBJ)
 </div>
 
 <?php require'footer.php'; ?>
+
+
+
+
+
+
+

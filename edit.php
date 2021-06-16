@@ -1,6 +1,7 @@
 <?php
 
 require 'db.php';
+$pdo = new PDO ("pgsql:host=ec2-54-160-7-200.compute-1.amazonaws.com;port=5432;dbname=dl2l9b69759n2","ebmvowswhkvuqi","8920718ceeb416497dcb004debd646f871be38ce45effb4aa2ec78a2cd0a951b");
 $id = $_GET['id'];
 $sql = "SELECT * FROM clientes WHERE id=:id";
 $stmt = $pdo->prepare($sql);
@@ -9,6 +10,7 @@ $person = $stmt -> fetch(PDO::FETCH_OBJ);
 
 if(!empty($_POST)){
     try{
+        $pdo = new PDO ("pgsql:host=ec2-54-160-7-200.compute-1.amazonaws.com;port=5432;dbname=dl2l9b69759n2","ebmvowswhkvuqi","8920718ceeb416497dcb004debd646f871be38ce45effb4aa2ec78a2cd0a951b");
 
         $sql = "UPDATE clientes SET nome = :nome,
                                     sobrenome = :sobrenome,

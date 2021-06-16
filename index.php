@@ -3,16 +3,11 @@ $sql = 'SELECT * FROM clientes';
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $clientes = $stmt->fetchAll(PDO::FETCH_OBJ)
-
-
 ?>
-
 <?php require'header.php'; ?>
-
 <!-- Lista de Clientes -->
 <div class="row">
   <div class="col l12">
-  <div catch="row container"></div>
   <a href="./create.php" class="btn modal-trigger green waves-effect waves-light ">Adicionar Cliente</a>
   <div class="card">
       <div class="card-content">
@@ -61,12 +56,4 @@ $clientes = $stmt->fetchAll(PDO::FETCH_OBJ)
     </div>
   </div>
 </div>
-
 <?php require'footer.php'; ?>
-
-
-
-
-
-
-
